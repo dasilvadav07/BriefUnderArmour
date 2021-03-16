@@ -1,12 +1,11 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     color: #1d1d1d;
     font-family: Armour_W_Rg,Arial,sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 20px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -15,27 +14,22 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    text-transform: uppercase;
 }
 h3 {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 26px;
     line-height: 1.1;
-    margin-bottom: 10px;
+    margin: 16px 0 10px 0;
+    text-transform: uppercase;
 }
 h4 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.1;   
-    margin: 16px 0 10px 0;
-}
-.uppercase {
+    margin: 30px 0 10px 0;
     text-transform: uppercase;
 }
-/* main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 a {
     text-decoration: none;
     color: #1d1d1d;
@@ -55,9 +49,10 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    text-transform: uppercase;
 }
 
-.cta_custom {
+.cta_custom, span {
     min-width: calc(43% - 12px);
     margin: 0 6px 12px;
     padding: 10px;
@@ -68,12 +63,15 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    text-transform: uppercase;
 }
 
 .container {
-    /* flex-direction: column;
-    flex-wrap: nowrap;
-    display: flex; */
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container_nouveaute, .container_vestes, .container_confort{
+    padding: 10px 2px 25px 2px;
     text-align: center;
 }
 .container_cta {
@@ -82,16 +80,44 @@ img {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 16px;
+    text-transform: uppercase;
 }
 
 .container_cta_block {
-    padding-right: 10px;
-    padding-left: 10px; 
+    padding: 10px 10px 50px 10px;
     font-size: 0;
     position: relative;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
- 
+
+.reussite_title-1 {
+    margin-bottom: 4px;
+    padding: 0 10px;
+}
+.confort-title-1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 12px 0;
+}
+.reussite_title-2, .nouveaute_title-1, .vestes_title-1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 12px 0;
+}
+.nouveaute_title-2, .vestes_title-2, .confort_title-2 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    padding: 0 10px;
+    text-transform: none;
+}
+.container_img_nouveaute, .container_img_vestes, .container_img_confort{
+    padding-bottom: 12px;
+}
  
