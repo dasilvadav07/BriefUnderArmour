@@ -319,8 +319,20 @@ main{
     .sub-nav__title:hover{
         color: #e70033;
     }
+    .btn-search{
+        display: none;
+    }
 }
 @media screen and (min-width:1000px){
+    .header__content{
+        width: 40%;
+    }
+    .logo{
+        width: 15%;
+    }
+    .desktop__menu{
+        width: 50%;
+    }
     .desktop-logo{
         width: 15%;
     }
@@ -334,6 +346,7 @@ main{
         display: none;
     }
     .btn-search{
+        display: block;
         margin-right: 10px;
         border: 1px solid #dfdfdf;
         border-left: none;
@@ -344,6 +357,15 @@ main{
     }
 }
 @media screen and (min-width: 1200px){
+    .desktop__menu{
+        width: 60%;
+    }
+    .desktop__menu ul{
+        font-size: 0.95em;
+    }
+    .fa-shopping-bag{
+        margin-left: 40px;
+    }
     .header__text{
         width: 33%;
         padding-left: 33%;
