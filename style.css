@@ -26,12 +26,10 @@ span {
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-}
 .show_mobile {
     display: block;
 }
@@ -69,7 +67,8 @@ span {
 
 .container_nouveaute,
 .container_vestes,
-.container_confort{
+.container_confort,
+.container_nouveaute-2 {
     padding: 10px 2px 25px 2px;
     text-align: center;
 }
@@ -86,7 +85,10 @@ span {
     text-align: center;
     text-transform: uppercase;
 }
-
+.container_cta_block .row {
+    display: flex;
+    margin-bottom: 10px;
+}
 .home_title-1 {
     font-weight: 900;
     font-size: 26px;
@@ -121,7 +123,8 @@ span {
 
 .reussite_title-2,
 .nouveaute_title-1,
-.vestes_title-1{
+.vestes_title-1,
+.nouveaute-2_title-1 {
     font-weight: 700;
     font-size: 24px; 
     margin: 0 0 12px 0;
@@ -130,11 +133,11 @@ span {
 
 .nouveaute_title-2,
 .vestes_title-2,
-.confort_title-2 {
+.confort_title-2,
+.nouveaute-2_title-2 {
     margin-bottom: 16px;
     margin-top: 0;
     font-size: 16px;
-    line-height: 16px;
     font-weight: 400;
     text-align: center;
     padding: 0 10px;
@@ -159,6 +162,11 @@ span {
         display: none;
     }
 
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
     .section_home {
         position: relative;
     }
@@ -179,7 +187,7 @@ span {
         left: 58%;
         top: 50%;
         font-weight: 900;
-        font-size: 49px;
+        font-size: 45px;
         line-height: 1.1;
         margin:0 0 10px 0;
         text-transform: uppercase;
@@ -191,12 +199,13 @@ span {
         z-index: 2;
         width: 40%;
         left: 58%;
-        top: 65%;
+        top: 79%;
         font-weight: 600;
         font-size: 18px;
         line-height: 1.1;   
         text-transform: uppercase;
         padding-left: 10px;
+        margin: 0;
     }
 
     .container_cta_block_home {
@@ -204,22 +213,23 @@ span {
         margin: 0;
         position: absolute;
         z-index: 3;
-        top: 80%;
+        top: 90%;
         left: 58%;
-        width: 30%;
+        width: 43%;
         text-align: center;
         text-transform: uppercase;
         display: flex;
     }
 
     .cta {
-        padding: 10px;
+        margin: aut10px;
+        padding: 7px;
         border: 2px solid #1d1d1d;
         background-color:#1d1d1d ;
         color: #FFFFFF;
         border-radius: 4px;
         font-family: Arial,sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         text-decoration: none;
         display: inline-block;
         text-transform: uppercase;
@@ -243,15 +253,12 @@ span {
         font-weight: 400;
     }
 
-    .reussite_title-2/*,
-    .nouveaute_title-1,
-    .vestes_title-1*/{ 
+    .reussite_title-2 { 
         font-weight: 900;
         font-size: 45px; 
     }
 
     .container_cta_block {
-        padding: 50px 0;
         text-align: center;
         text-transform: uppercase;
         display: flex;
@@ -259,7 +266,7 @@ span {
     }
 
     .cta_custom {
-        width: 100%;
+        width: auto;
         display: inline-block;
         color: #1d1d1d;
         border: 2px solid #1d1d1d;
@@ -280,25 +287,74 @@ span {
         position: relative;
     }
 
-    span {
+    .container_img_nouveaute span,
+    .container_img_vestes span,
+    .container_img_confort span {
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 40%;
         border: 2px solid #fff;
         color: #fff;
         opacity: 0;
+        transform: translate(-50%, -50%);
+        width: auto;
+        border-radius: 4px;
     }
 
-    span:hover {
-        background-color:#FFFFFF;
-        color: #1d1d1d;
-        transition: all .5s ease;
+    .container_img_nouveaute:hover span,
+    .container_img_vestes:hover span,
+    .container_img_confort:hover span {
         opacity: 1;
     }
 
-    .img_hover:hover{
-        filter: brightness(0.5);
-        transition: all .5s ease;
+    .container_img_nouveaute:hover span:hover,
+    .container_img_vestes:hover span:hover,
+    .container_img_confort:hover span:hover{
+        background-color:#FFFFFF;
+        color: #1d1d1d;
+        transition: all 0.5s ease;
     }
+
+    .container_img_nouveaute:hover .img_hover,
+    .container_img_vestes:hover .img_hover,
+    .container_img_confort:hover .img_hover {
+        filter: brightness(0.5);
+        transition: all 0.5s ease;
+    }
+
+    .container_nouveaute,
+    .container_vestes {
+        width: 70%;
+        margin: 30px auto 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .container_confort,
+    .container_nouveaute-2 {
+        width: 92%;
+        margin: 30px auto 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nouveaute_title-1,
+    .vestes_title-1,
+    .confort_title-1,
+    .nouveaute-2_title-1 {
+        font-weight: 900;
+        line-height: 1;
+        padding-bottom: 5px;
+    }
+
+    .nouveaute_title-2,
+    .vestes_title-2,
+    .confort_title-2,
+    .nouveaute-2_title-2 {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+
 
 }
