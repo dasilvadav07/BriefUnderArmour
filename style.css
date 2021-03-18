@@ -85,10 +85,12 @@ span {
     text-align: center;
     text-transform: uppercase;
 }
+
 .container_cta_block .row {
     display: flex;
     margin-bottom: 10px;
 }
+
 .home_title-1 {
     font-weight: 900;
     font-size: 26px;
@@ -140,8 +142,7 @@ span {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    padding: 0 10px;
-    
+    padding: 0 10px;  
 }
 
 .container_img_nouveaute,
@@ -173,7 +174,6 @@ span {
 
     .container_home {
         display: block;
-        width: 85%;
         margin: 0 auto;
         text-align: left;
         margin-bottom: 16px;
@@ -184,27 +184,27 @@ span {
         position: absolute;
         z-index: 1;
         width: 40%;
-        left: 58%;
+        left: 57%;
         top: 50%;
         font-weight: 900;
         font-size: 45px;
         line-height: 1.1;
         margin:0 0 10px 0;
         text-transform: uppercase;
-        padding-left: 10px;
+        padding-left: 35px;
     }
     
     .home_title-2 {
         position: absolute;
         z-index: 2;
         width: 40%;
-        left: 58%;
-        top: 79%;
+        left: 57%;
+        top: 70%;
         font-weight: 600;
         font-size: 18px;
         line-height: 1.1;   
         text-transform: uppercase;
-        padding-left: 10px;
+        padding-left: 35px;
         margin: 0;
     }
 
@@ -213,27 +213,30 @@ span {
         margin: 0;
         position: absolute;
         z-index: 3;
-        top: 90%;
-        left: 58%;
-        width: 43%;
+        top: 78%;
+        left: 59%;
+        width: 41%;
         text-align: center;
         text-transform: uppercase;
         display: flex;
+        flex-wrap: wrap;
     }
 
     .cta {
-        margin: aut10px;
-        padding: 7px;
+        margin: 8px;
+        padding: 8px 20px;
         border: 2px solid #1d1d1d;
         background-color:#1d1d1d ;
         color: #FFFFFF;
         border-radius: 4px;
         font-family: Arial,sans-serif;
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 700;
         text-decoration: none;
         display: inline-block;
         text-transform: uppercase;
     }
+
     .cta:hover{
         border: 2px solid #FFFFFF;
         background-color:#FFFFFF ;
@@ -245,6 +248,7 @@ span {
         text-align: center;
         padding-top: 50px;
     }
+
     .reussite_title-1 {
         margin-bottom: 16px;
         padding: 0 10px;
@@ -354,7 +358,4 @@ span {
         font-size: 12px;
         line-height: 1;
     }
-
-
-
 }
