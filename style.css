@@ -10,10 +10,12 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 .link {
     text-decoration: none;
     color: #1d1d1d;
 }
+
 .img_all {
     width: 100%;
 }
@@ -99,7 +101,7 @@ html {
     text-transform: uppercase;
 }
 
-.home_title-2{
+.home_title-2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.1;   
@@ -147,7 +149,7 @@ html {
 
 .container_img_nouveaute,
 .container_img_vestes,
-.container_img_confort{
+.container_img_confort {
     padding-bottom: 12px;
 }
 
@@ -282,6 +284,12 @@ html {
         text-transform: uppercase;
     }
 
+    .cta_custom:hover {
+        background: #1d1d1d;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
     .row_nouveaute,
     .row_vestes,
     .row_confort {
@@ -291,9 +299,9 @@ html {
         position: relative;
     }
 
-    .container_img_nouveaute span,
-    .container_img_vestes span,
-    .container_img_confort span {
+    .container_img_nouveaute .span_btn,
+    .container_img_vestes .span_btn,
+    .container_img_confort .span_btn {
         position: absolute;
         left: 50%;
         top: 40%;
@@ -305,15 +313,15 @@ html {
         border-radius: 4px;
     }
 
-    .container_img_nouveaute:hover span,
-    .container_img_vestes:hover span,
-    .container_img_confort:hover span {
+    .container_img_nouveaute:hover .span_btn,
+    .container_img_vestes:hover .span_btn,
+    .container_img_confort:hover .span_btn {
         opacity: 1;
     }
 
-    .container_img_nouveaute:hover span:hover,
-    .container_img_vestes:hover span:hover,
-    .container_img_confort:hover span:hover{
+    .container_img_nouveaute:hover .span_btn:hover,
+    .container_img_vestes:hover .span_btn:hover,
+    .container_img_confort:hover .span_btn:hover{
         background-color:#FFFFFF;
         color: #1d1d1d;
         transition: all 0.5s ease;
