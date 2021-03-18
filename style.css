@@ -9,7 +9,7 @@ html, body {
 .imgchaussures2 {
     max-width: max-content;
 }
-img{
+.imggeneral{
     width:100%;
  
 }
@@ -42,6 +42,12 @@ img{
     color: black;
     font-weight: bold;
     width: 43%;
+}
+.monA {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 400;
+    font-size: 16px;
 }
 .uppercase {
     text-transform: uppercase;
@@ -131,24 +137,19 @@ img{
 .visiblemobile, .active {
 display: block;
 }
-ul {
+.monul {
     text-align: left;
     margin: 0;
     padding: 0;
 }
-li {
+.monli {
     border: 1px solid #ccc;
     padding: 10px ;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-a {
-    text-decoration: none;
-    color: #1d1d1d;
-    font-weight: 400;
-    font-size: 16px;
-}
+
 
 /* -------------------------------------------------- */
 
@@ -192,9 +193,9 @@ a {
     transform: translate(-50%, -50%);
     opacity: 0;
   }
-  .imgchaussures2:hover img,
-   .imgchaussures:hover img,
-   .imgrock:hover img{
+  .imgchaussures2:hover .imggeneral,
+   .imgchaussures:hover .imggeneral,
+   .imgrock:hover .imggeneral{
        
        filter: brightness(0.5);
        transition: all 0.5s ease;
@@ -237,24 +238,24 @@ a {
 
         
     }
-    ul {
+    .monul {
         list-style: none;
         text-align: left;
     }
-    a {
+    .monA {
         text-decoration: none;
         color: #1d1d1d;
         font-weight: 400;
         font-size: 16px;
     }
-    a:hover {
+    .monA:hover {
         color: #e51b24;
     }
-    li {
+    .monli {
         margin: 10px 0px;
         border: none;
     }
-    .toutlecarou {
+    /* .toutlecarou {
         width: 100%;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
@@ -271,5 +272,5 @@ a {
     .texte-carou {
         font-size: 18px;
         font-family: bold;
-    }
+    } */
 }
