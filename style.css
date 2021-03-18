@@ -60,11 +60,12 @@ img{
     border: 1px solid #ccc;
     padding: 1px ;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    
 }
 .Tendancessize {
     padding: 12px 10px;
@@ -127,8 +128,26 @@ img{
 .invisiblemobile {
  display: none;
 }
-.visiblemobile {
+.visiblemobile, .active {
 display: block;
+}
+ul {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+li {
+    border: 1px solid #ccc;
+    padding: 10px ;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* -------------------------------------------------- */
@@ -197,8 +216,7 @@ display: block;
         background: none;
         max-width: fit-content;
         display: flex;
-        margin: 50px;
-    }
+        margin: 50px auto    }
     .Tendances__h2 {
         border: none;
         padding: 1px ;
@@ -215,7 +233,7 @@ display: block;
         /* padding: 12px 10px;
         margin: 0%; */
         font-size: 16px;
-        padding-left: 40px;
+        padding-left: 10px;
 
         
     }
@@ -234,5 +252,24 @@ display: block;
     }
     li {
         margin: 10px 0px;
+        border: none;
+    }
+    .toutlecarou {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        overflow: hidden;
+        
+    }
+    .img-carou{ 
+        width: 80%; 
+        display: flex;
+     } 
+    figure {
+        display: flex;
+    }
+    .texte-carou {
+        font-size: 18px;
+        font-family: bold;
     }
 }
