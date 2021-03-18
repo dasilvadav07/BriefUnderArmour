@@ -29,6 +29,7 @@ body{
 .header__bottom{
     height: 60%;
     display: flex;
+    border-bottom: 1px solid #dfdfdf;
 }
 #search-bar{
     display: none;
