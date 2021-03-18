@@ -10,15 +10,15 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-a {
+.link {
     text-decoration: none;
     color: #1d1d1d;
 }
-img {
+.img_all {
     width: 100%;
 }
 
-span {
+.span_btn {
     padding: 10px;
     border: 1px solid #1d1d1d;
     font-family: Arial,sans-serif;
