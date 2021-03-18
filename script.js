@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let menuBtn = document.querySelector("#menu-mobile");
 let firstBar = document.querySelector("#menu-mobile span:first-child");
 let secondBar = document.querySelector("#menu-mobile span:nth-child(2)");
@@ -21,7 +20,6 @@ menuBtn.addEventListener("click", () => {
         mobileNav.classList.add("appear");
     }
 })
-=======
 let acc = document.querySelectorAll(".btn");
 
 for (let i = 0; i < acc.length; i++) {
@@ -34,4 +32,3 @@ for (let i = 0; i < acc.length; i++) {
   })
 }
 
->>>>>>> origin/ayoub
